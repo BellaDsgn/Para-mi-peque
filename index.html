@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GABRIEL.EXE — Hot Wheels Edition</title>
+
+    <meta name="description" content="A little surprise for Gabriel ❤️">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+
+    <section id="loader" class="screen active">
+
+        <div class="loader-content">
+
+            <div class="mini-label">
+                PERSONAL PROJECT // 2026
+            </div>
+
+            <h1>
+                GABRIEL<span>.EXE</span>
+            </h1>
+
+            <div class="loading-box">
+
+                <div class="loading-text">
+                    INITIALIZING EXPERIENCE...
+                </div>
+
+                <div class="progress">
+                    <div id="progress-bar"></div>
+                </div>
+
+                <div id="loading-percent">
+                    0%
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section id="intro" class="screen">
+
+        <div class="grid-bg"></div>
+
+        <div class="intro-content">
+
+            <div class="status">
+                ● SYSTEM READY
+            </div>
+
+            <h2>
+                HEY,<br>
+                <strong>GABRIEL.</strong>
+            </h2>
+
+            <p class="intro-text">
+                Hoy no quería simplemente regalarte un Hot Wheels.
+            </p>
+
+            <p class="intro-text highlight">
+                Quería hacerte uno.
+            </p>
+
+            <button class="main-button" onclick="nextScreen('profile')">
+                START ENGINE
+                <span>→</span>
+            </button>
+
+        </div>
+
+        <div class="speed-lines"></div>
+
+    </section>
+
+
+    <!-- PROFILE -->
+
+    <section id="profile" class="screen">
+
+        <div class="top-bar">
+            <span>GABRIEL.EXE</span>
+            <span>VERSION 2026.09</span>
+        </div>
+
+        <div class="profile-container">
+
+            <div class="profile-copy">
+
+                <div class="section-number">
+                    01 / PROFILE
+                </div>
+
+                <h2>
+                    CHARACTER<br>
+                    <span>PROFILE</span>
+                </h2>
+
+                <div class="terminal-card">
+
+                    <div class="terminal-header">
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+                        <span class="terminal-dot"></span>
+
+                        <span class="terminal-title">
+                            gabriel.exe
+                        </span>
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <p>
+                            <span class="code-key">ROLE:</span>
+                            Software Developer
+                        </p>
+
+                        <p>
+                            <span class="code-key">SPECIAL SKILLS:</span>
+                        </p>
+
+                        <p class="skill">
+                            ✓ Turning ideas into code
+                        </p>
+
+                        <p class="skill">
+                            ✓ Solving impossible bugs
+                        </p>
+
+                        <p class="skill">
+                            ✓ Creating cool things
+                        </p>
+
+                        <p class="skill">
+                            ✓ Making me smile
+                        </p>
+
+                        <p class="status-line">
+                            STATUS:
+                            <span>♥ RUNNING</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button class="outline-button" onclick="nextScreen('ride')">
+                    NEXT →
+                </button>
+
+            </div>
+
+
+            <div class="car-area">
+
+                <div class="speed-circle">
+                    <span>MAX</span>
+                    <strong>∞</strong>
+                    <small>KM/H</small>
+                </div>
+
+                <div class="car-shadow"></div>
+
+                <div class="car-placeholder">
+
+                    <div class="car-body">
+
+                        <div class="car-window"></div>
+
+                        <div class="car-wheel wheel-left"></div>
+                        <div class="car-wheel wheel-right"></div>
+
+                        <div class="car-light"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="car-label">
+                    GAB-01
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RIDE -->
+
+    <section id="ride" class="screen">
+
+        <div class="road-bg"></div>
+
+        <div class="ride-content">
+
+            <div class="section-number">
+                02 / THE RIDE
+            </div>
+
+            <h2>
+                READY FOR<br>
+                <span>THE NEXT RIDE?</span>
+            </h2>
+
+            <p>
+                Porque lo mejor de cualquier viaje<br>
+                no es llegar al destino.
+            </p>
+
+            <div class="ride-options">
+
+                <button onclick="showMessage('speed')">
+                    <span>01</span>
+                    SPEED
+                </button>
+
+                <button onclick="showMessage('code')">
+                    <span>02</span>
+                    CODE
+                </button>
+
+                <button onclick="showMessage('love')">
+                    <span>03</span>
+                    LOVE
+                </button>
+
+            </div>
+
+            <div id="ride-message" class="ride-message">
+                <span id="message-icon">🏎️</span>
+                <p id="message-text"></p>
+            </div>
+
+            <button
+                id="final-button"
+                class="main-button hidden"
+                onclick="nextScreen('final')">
+
+                CONTINUE
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL -->
+
+    <section id="final" class="screen">
+
+        <div class="final-bg"></div>
+
+        <div class="final-content">
+
+            <div class="terminal-final">
+
+                <p>
+                    <span>></span> git status
+                </p>
+
+                <p class="success">
+                    Everything is up to date.
+                </p>
+
+                <br>
+
+                <p>
+                    <span>></span> git log --relationship
+                </p>
+
+                <p>
+                    2024 — We met
+                </p>
+
+                <p>
+                    2025 — More memories
+                </p>
+
+                <p>
+                    2026 — Still choosing you ❤️
+                </p>
+
+                <p>
+                    NEXT — More adventures...
+                </p>
+
+                <br>
+
+                <p>
+                    <span>></span> git push love
+                </p>
+
+                <p class="success">
+                    Successfully pushed ❤️
+                </p>
+
+            </div>
+
+
+            <div class="final-message">
+
+                <div class="checkered">
+                    ▦ ▦ ▦ ▦ ▦ ▦ ▦
+                </div>
+
+                <h1>
+                    HAPPY<br>
+                    <span>HOT WHEELS DAY</span>
+                </h1>
+
+                <p>
+                    Gabriel,
+                </p>
+
+                <p>
+                    Que sigamos recorriendo muchos kilómetros,
+                    descubriendo lugares, creando recuerdos
+                    y compartiendo aventuras juntos.
+                </p>
+
+                <p class="signature">
+                    — Emily ❤️
+                </p>
+
+            </div>
+
+
+            <button class="restart-button" onclick="restartExperience()">
+                ↻ REPLAY EXPERIENCE
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SECRET MESSAGE -->
+
+    <div id="secret-message">
+
+        <div class="secret-box">
+
+            <div class="secret-code">
+                // developer's secret area
+            </div>
+
+            <h3>
+                YOU FOUND IT. 👀
+            </h3>
+
+            <p>
+                const favoritePerson = "Gabriel";
+            </p>
+
+            <p>
+                const favoriteDeveloper = "Gabriel";
+            </p>
+
+            <p>
+                const favoriteHuman = "Gabriel";
+            </p>
+
+            <strong>
+                ❤️
+            </strong>
+
+            <button onclick="closeSecret()">
+                CLOSE
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
